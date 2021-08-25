@@ -1,0 +1,32 @@
+.card {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0, 0.8);
+    margin-top: 20px;
+}
+.cart__description, .btn__card {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title, .price {
+    color: white;
+}
+
+.btn__add {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #17CB08;
+    color: white;
+}

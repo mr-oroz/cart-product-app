@@ -1,0 +1,11 @@
+.cart {
+    display: flex;
+    justify-content: space-between;
+}
+.text {
+    margin-left: 8px;
+}
+.header {
+    background-color: rgba(40, 228, 25, 0.4);
+    padding: 15px 0;
+}

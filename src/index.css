@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+    max-width: 1168px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    padding: 0;
+    margin: 0;
+    background: #222222;
+    background-image: url("https://kidpassage.com/images/publications/fruktyi-egipta/1485_Egypt-gallery335773197.jpg");
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fa-shopping-cart {
+    color: white;
+    position: relative;
+}
+.cart-length {
+    position: absolute;
+    top: -6px;
+    left: 80%;
+    font-size: 18px;
+    background-color: crimson;
+    border-radius: 10px;
+    color: white;
+    padding: 1px;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
