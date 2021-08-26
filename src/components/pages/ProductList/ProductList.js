@@ -8,6 +8,7 @@ class ProductList extends Component {
             return <ProductListItem
                 onAddToCart={()=> onAddToCart(elem.id)}
                 key={elem.id}
+                idx={index}
                 {...elem} />
         })
         return (

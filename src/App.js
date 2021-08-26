@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import ProductList from "./components/pages/ProductList";
 import Basket from "./components/pages/Basket";
+import Details from "./components/Details";
 
 class App extends Component {
     state = {
@@ -120,6 +121,9 @@ class App extends Component {
                                     onDeleteProduct={this.onDeleteProduct}
                                     exact
                                     basket={basket}/>
+                            </Route>
+                            <Route path='/details/:id'>
+                                <Details data={data}/>
                             </Route>
                         </div>
                     </Switch>

@@ -8,7 +8,7 @@ class Header extends Component {
             <div className={s.header}>
                 <div className="container">
                     <div className={s.header__menu}>
-                        <h2>Pizza</h2>
+                        <Link to={'/'}><h2>Pizza</h2></Link>
                         <ul>
                             <Link to='/'>
                                 <li className={s.menu}>Menu</li>
