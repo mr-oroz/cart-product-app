@@ -1,6 +1,6 @@
 .card {
     width: 300px;
-    height: 400px;
+    height: 100%;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
     padding: 15px;
     display: flex;
@@ -16,7 +16,7 @@
     align-items: center;
     flex-direction: column;
 }
-.title, .price {
+.title, .price, .rebate {
     color: white;
 }
 

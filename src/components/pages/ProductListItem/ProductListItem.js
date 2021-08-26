@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import s from './ProductListItem.module.css';
 
 class ProductListItem extends Component {
     render() {
+        const { title, price, image, rebate, onAddToCart } = this.props;
         return (
             <>
                 <div className={s.card}>
@@ -11,62 +12,19 @@ class ProductListItem extends Component {
                             width: '100%',
                             height: 250
                         }}
-                        src='https://images.ua.prom.st/1662507386_w640_h640_iskusstvennye-frukty-yabloko.jpg'
-                        alt=""/>
+                        src={image}
+                        alt="" />
                     <div className={s.cart__description}>
-                        <span className={s.title}>Title</span>
-                        <p className={s.price}>price: 15$</p>
+                        <span className={s.title}>{title}</span>
+                        <p className={s.price}>price: {price}$</p>
+                        <p className={s.rebate}>rebate: {rebate}%</p>
                     </div>
                     <div className={s.btn__card}>
-                        <button className={s.btn__add}>Add to Cart</button>
-                    </div>
-                </div>
-                <div className={s.card}>
-                    <img
-                        style={{
-                            width: '100%',
-                            height: 250
-                        }}
-                        src='https://images.ua.prom.st/1662507386_w640_h640_iskusstvennye-frukty-yabloko.jpg'
-                        alt=""/>
-                    <div className={s.cart__description}>
-                        <span className={s.title}>Title</span>
-                        <p className={s.price}>price: 15$</p>
-                    </div>
-                    <div className={s.btn__card}>
-                        <button className={s.btn__add}>Add to Cart</button>
-                    </div>
-                </div>
-                <div className={s.card}>
-                    <img
-                        style={{
-                            width: '100%',
-                            height: 250
-                        }}
-                        src='https://images.ua.prom.st/1662507386_w640_h640_iskusstvennye-frukty-yabloko.jpg'
-                        alt=""/>
-                    <div className={s.cart__description}>
-                        <span className={s.title}>Title</span>
-                        <p className={s.price}>price: 15$</p>
-                    </div>
-                    <div className={s.btn__card}>
-                        <button className={s.btn__add}>Add to Cart</button>
-                    </div>
-                </div>
-                <div className={s.card}>
-                    <img
-                        style={{
-                            width: '100%',
-                            height: 250
-                        }}
-                        src='https://images.ua.prom.st/1662507386_w640_h640_iskusstvennye-frukty-yabloko.jpg'
-                        alt=""/>
-                    <div className={s.cart__description}>
-                        <span className={s.title}>Title</span>
-                        <p className={s.price}>price: 15$</p>
-                    </div>
-                    <div className={s.btn__card}>
-                        <button className={s.btn__add}>Add to Cart</button>
+                        <button
+                            onClick={onAddToCart}
+                            className={s.btn__add}>
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </>

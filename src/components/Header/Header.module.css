@@ -5,6 +5,20 @@
 .text {
     margin-left: 8px;
 }
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu h2 {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
 .header {
     background-color: rgba(40, 228, 25, 0.4);
     padding: 15px 0;

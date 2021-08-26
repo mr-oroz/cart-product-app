@@ -8,8 +8,9 @@ body {
     padding: 0;
     margin: 0;
     background: #222222;
-    background-image: url("https://kidpassage.com/images/publications/fruktyi-egipta/1485_Egypt-gallery335773197.jpg");
+    background-image: url("https://sushipizza74.ru/images/stories/virtuemart/product/kaprichchibortic.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 * {
@@ -57,4 +58,5 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
 }
